@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(209, 120, 57);
+}
+.container{
+    padding: 10px 10px;
+    background: whitesmoke;
+}
+nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+} 
+.logo{
+    width: 150px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    list-style: none;
+}
+nav ul li a{
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    position: absolute;
+    left: 1px;
+    bottom: -3px;
+background: green; 
+   transition: 1s;
+}
+nav ul li a:hover::after{
+    width: 100%; 
+}
