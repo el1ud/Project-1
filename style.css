@@ -9,6 +9,7 @@ html{
 body{
     background: rgb(209, 120, 57);
 }
+/* -- navigation bar--*/
 .container{
     padding: 10px 10px;
     background: whitesmoke;
@@ -40,9 +41,40 @@ nav ul li a::after{
     position: absolute;
     left: 1px;
     bottom: -3px;
-background: green; 
-   transition: 1s;
+    background: green; 
+    transition: 1s;
 }
 nav ul li a:hover::after{
     width: 100%; 
+}
+/*-- about section --*/
+#About{
+    width: 100%;
+    height: 100%;
+    /*background-image: url(https://www.futurity.org/wp/wp-content/uploads/2023/05/airplane-noise-sleep-1600.jpg)*/
+ 
+}
+.about{
+    position: bottom;
+    margin-bottom: -200px;
+}
+.about .summary {
+    position: absolute;
+    bottom: -250px;
+    margin-top: 25%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding-left: 20px;
+    font-size: 18px;
+}
+.about .summary h1{
+    color: chocolate;
+}
+.about .summary p{
+    color: rgb(244, 203, 150)
+}
+.about .summary p span{
+    color: rgb(200, 86, 44);
+    font-size: 35px;
 }
