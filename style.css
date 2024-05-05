@@ -71,7 +71,21 @@ nav ul li a:hover::after{
     max-width: fit-content;
     margin: 0 auto;
 }
-.about .summary {
+.summary{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: azure;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 2s ease;
+}
+.about:hover .summary{
+  height: 20%;
+}
+/*.about .summary {
     /*position: absolute;
     bottom: -250px;
     margin-top: 25%;
@@ -80,14 +94,14 @@ nav ul li a:hover::after{
     width: 100%;
     padding-left: 20px;
     font-size: 18px;*/
-    position: absolute;
+   /* position: absolute;
     bottom: 0;
     background: rgb(0,0,0,);
     background: rgba(0,0,0,0.5);
     color: rgb(244,203,150, );
     width: 100%;
     padding: 20px;
-}
+}*/
 .about .summary h1{
     color: chocolate;
 }
