@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       // Create flip cards for each item in the data array
       data.slice(0, 6).forEach(item => {
-        const flipCard = createFlipCard(item);
+        const flipCard = createFlipCard(item) ;
         cardContainer.appendChild(flipCard);
       });
     })
