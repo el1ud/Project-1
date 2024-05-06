@@ -95,6 +95,38 @@
 
 // Function to fetch data and populate flip cards
 // Function to fetch data and populate flip cards
+// Function to handle click on "Add Meal" button
+
+document.getElementById('add-meal-button').addEventListener('click', () => {
+  // Prompt the user to enter the details of the new meal
+  const newMealName = prompt('Enter the name of the new meal:');
+  const newMealImage = prompt('Enter the image URL of the new meal:');
+  const newMealIngredients = prompt('Enter the ingredients of the new meal (separated by commas):');
+
+  // Validate the input data (e.g., check if the required fields are not empty)
+  if (newMealName && newMealImage && newMealIngredients) {
+      // Add the new meal to your data source (in this case, the JSON file)
+      const newMeal = {
+          name: newMealName,
+          image: newMealImage,
+          ingredients: newMealIngredients,
+          likes: 0 // You can set the initial number of likes as needed
+      };
+
+      // Add your code to save the new meal to your data source (e.g., append it to the JSON file)
+
+      // For now, let's just display the details of the new meal
+      alert('You added a new meal:\nName: ' + newMealName + '\nImage URL: ' + newMealImage + '\nIngredients: ' + newMealIngredients);
+  } else {
+      alert('Please fill in all fields to add a new meal.');
+  }
+});
+
+
+
+
+
+
 fetch('https://api.myjson.online/v1/records/bcabe328-c19f-4252-87df-59ab6c6e3253')
 .then(response => response.json())
 .then(data => {
@@ -128,7 +160,14 @@ fetch('https://api.myjson.online/v1/records/bcabe328-c19f-4252-87df-59ab6c6e3253
             likeButton.addEventListener('click', () => {
                 item.likes++;
                 likeButton.textContent = 'Like (' + item.likes + ')';
+                likeButton.style.backgroundColor = 'green';
+                likeButton.style.color = 'white';
             });
+
+            const mealNameBack = document.createElement('h3'); // New element for meal name on back side
+            mealNameBack.textContent = item.name; // Set the meal name on back side
+            flipCardBack.appendChild(mealNameBack);
+            
             flipCardBack.appendChild(ingredients);
             flipCardBack.appendChild(likeButton);
 
