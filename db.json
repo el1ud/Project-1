@@ -1,5 +1,4 @@
-{
-   "menu" : [
+ [
       {
         "id": 1,
         "name": "Baingan Bharta",
@@ -43,5 +42,4 @@
         "likes": 14
       }
 
-    ]
-  }
+   ]
