@@ -76,7 +76,7 @@ nav ul li a:hover::after{
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: azure;
+  background-color: bisque;
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -104,13 +104,18 @@ nav ul li a:hover::after{
 }*/
 .about .summary h1{
     color: chocolate;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .about .summary p{
-    color: rgb(244, 203, 150)
+    color: rgb(88, 51, 3);
+    font-family: cursive;
+    font-size: 20px;
 }
 .about .summary p span{
     color: rgb(200, 86, 44);
-    font-size: 35px;
+    font-size: 30px;
+    font-family: cursive;
 }
 
 /* services */
@@ -377,6 +382,10 @@ margin-top: 150px;
   height: auto;
 }
 
+#sa{
+  font-family: cursive;
+}
+
 #flip-card-container {
   display: flex;
   flex-wrap: wrap;
@@ -461,7 +470,7 @@ img {
   font-size: 30px;
   font-weight: 900;
   font-style: italic;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs;
+  font-family: cursive
 }
 
 #add-meal-button {
@@ -479,4 +488,11 @@ img {
 
 #add-meal-button:hover {
   background-color:rgb(24, 171, 24); /* Darker shade of blue on hover */
+}
+
+#copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: black;
 }

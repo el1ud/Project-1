@@ -167,7 +167,7 @@ fetch('https://api.myjson.online/v1/records/bcabe328-c19f-4252-87df-59ab6c6e3253
             const mealNameBack = document.createElement('h3'); // New element for meal name on back side
             mealNameBack.textContent = item.name; // Set the meal name on back side
             flipCardBack.appendChild(mealNameBack);
-            
+
             flipCardBack.appendChild(ingredients);
             flipCardBack.appendChild(likeButton);
 
@@ -181,6 +181,25 @@ fetch('https://api.myjson.online/v1/records/bcabe328-c19f-4252-87df-59ab6c6e3253
     }
 })
 .catch(error => console.error('Error fetching data:', error));
+
+document.getElementById('add-meal-button').addEventListener('click', () => {
+  const newMealName = prompt('Enter the name of the new meal:');
+  if (newMealName) {
+      const newMeal = {
+          id: data.data.data.length + 1, // Generate a new ID (assuming IDs are sequential integers)
+          name: newMealName,
+          image: 'https://via.placeholder.com/300', // Placeholder image URL
+          likes: 0, // Initialize likes to zero for the new meal
+          ingredients: 'New ingredients' // Placeholder ingredients
+      };
+
+      // Append the new meal to the data array
+      data.data.data.push(newMeal);
+
+      // Render the new meal
+      renderMeal(newMeal);
+  }
+});
 
 //document.addEventListener('click', function(event) {
   //if (event.target.classList.contains('like-button')) {
