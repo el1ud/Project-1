@@ -9,7 +9,7 @@ html{
 body{
     background: rgb(209, 120, 57);
 }
-/* -- navigation bar--*/
+/* -- home section--*/
 #Home{
     margin-bottom: 20px;
 }
@@ -61,12 +61,9 @@ nav ul li a:hover::after{
 #About{
     width: 100%;
     height: 100%;
-    /*background-image: url(https://www.futurity.org/wp/wp-content/uploads/2023/05/airplane-noise-sleep-1600.jpg)*/
- margin-top: 20px;
+    margin-top: 20px;
 }
 .about{
-    /*position: bottom;
-    margin-bottom: -200px;*/
     position: relative;
     max-width: fit-content;
     margin: 0 auto;
@@ -85,23 +82,7 @@ nav ul li a:hover::after{
 .about:hover .summary{
   height: 20%;
 }
-/*.about .summary {
-    /*position: absolute;
-    bottom: -250px;
-    margin-top: 25%;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    padding-left: 20px;
-    font-size: 18px;*/
-   /* position: absolute;
-    bottom: 0;
-    background: rgb(0,0,0,);
-    background: rgba(0,0,0,0.5);
-    color: rgb(244,203,150, );
-    width: 100%;
-    padding: 20px;
-}*/
+
 .about .summary h1{
     color: chocolate;
     text-align: center;
@@ -118,263 +99,7 @@ nav ul li a:hover::after{
     font-family: cursive;
 }
 
-/* services */
-
-/*.flip-card {
-    background-color: transparent;
-    width: 200px;
-    height: 300px;
-    perspective: 1000px;
-    display: inline-block;
-    margin: 10px;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front,
-  .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .flip-card-back {
-    background-color: #f7f7f7;
-    transform: rotateY(180deg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .like-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }*/
-
-
-  /* styles.css */
-
-/*.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .flip-card {
-    background-color: transparent;
-    width: 200px;
-    height: 300px;
-    perspective: 1000px; /* Enable 3D effect */
-  /*  margin: 10px;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 4s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
-  
-  .flip-card-back {
-    background-color: #2980b9;
-    color: white;
-    transform: rotateY(180deg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .like-btn {
-    padding: 5px 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  .like-btn:hover {
-    background-color: #45a049;
-  }
-  */
-
-  /* styles.css */
-#services{
-    width: auto;
-    height: auto;
-    
-}
-/*.container {
-margin-top: 150px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.flip-card {
-  background-color: transparent;
-  width: calc(33.33% -20px);
-  height: 300px; /* Set fixed height */
-  /*perspective: 1000px; /* Enable 3D effect */
- /* margin: 10px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-card-back {
-  background-color: #2980b9;
-  color: white;
-  transform: rotateY(180deg);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Adjust alignment */
- /* padding: 10px; /* Add padding */
-/*}
-
-.like-btn {
-  padding: 5px 10px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.like-btn:hover {
-  background-color: #45a049;
-}
-*/
-
-
-
-
-
-
-
-/*
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.card {
-  width: 200px;
-  height: 300px;
-  margin: 10px;
-  perspective: 1000px;
-}
-
-.card-inner {
-  width: 100%;
-  height: 100%;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-.card:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  backface-visibility: hidden;
-}
-
-.card-front img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.card-back {
-  transform: rotateY(180deg);
-  background-color: #2980b9;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.like-button {
-  background-color: #fff;
-  color: #2980b9;
-  border: 2px solid #2980b9;
-  padding: 5px 10px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.like-button:hover {
-  background-color: #2980b9;
-  color: #fff;
-}*/
+/*menu section */
 
 #menu{
   margin-top: 350px;
@@ -394,12 +119,12 @@ margin-top: 150px;
 
 .flip-card {
   background-color: transparent;
-  width: calc(30% - 20px); /* Adjust as needed */
+  width: calc(30% - 20px); 
   height: 300px;
   perspective: 1000px;
   margin-bottom: 20px;
-  position: relative; /* Added */
-  border-radius: 20px; /* Added */
+  position: relative; 
+  border-radius: 20px; 
   overflow: hidden;
 }
 
@@ -408,10 +133,10 @@ margin-top: 150px;
   height: 100%;
   transition: transform 2s;
   transform-style: preserve-3d;
-  display: flex; /* Added */
-  flex-direction: column; /* Added */
-  justify-content: center; /* Added */
-  align-items: center; /* Added */
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
     
 }
 
@@ -424,16 +149,16 @@ margin-top: 150px;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  position: absolute; /* Added */
-  top: 0; /* Added */
-  left: 0; /* Added */
+  position: absolute; 
+  top: 0; 
+  left: 0; 
 }
 
 .flip-card-front {
   background-color: #bbb;
   color: black;
   text-align: center;
-  z-index: 1; /* Added */
+  z-index: 1; 
 }
 
 .flip-card-back {
@@ -444,7 +169,7 @@ margin-top: 150px;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  z-index: 0; /* Added */
+  z-index: 0;
 }
 
 .like-button {
@@ -462,7 +187,7 @@ margin-top: 150px;
 }
 
 img {
-  max-width: 100%; /* Ensure images don't exceed their container */
+  max-width: 100%; 
   height: auto;
 }
 
@@ -480,14 +205,14 @@ img {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 20px; /* Add margin top to push it down */
+  margin-top: 20px; 
   font-size: 16px;
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s;
 }
 
 #add-meal-button:hover {
-  background-color:rgb(24, 171, 24); /* Darker shade of blue on hover */
+  background-color:rgb(24, 171, 24); 
 }
 
 #copyright {
